@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    background-color: #f1f3f6;
+}
+
+input::placeholder {
+    color: #626468;
+    margin-bottom: 100px;
+}
+
+.logincontainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    height: 40%;
+    width: 25%;
+    /*min-width: 350px;*/
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*Estilo neoformismo */
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+.text {
+    font-size: 2em;
+    color: #626468;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.buttom {
+    margin-top: 12.5%;
+
+    height: 45px;
+    width: 4rem;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+.p {
+    text-align: center;
+    color: #626468;
+    font-size: 0.9em;
+}
+
+.buttom a {
+    margin-top: 10px;
+    display: block;
+    color: #626468;
+    text-decoration: none;
+}
+
+.buttom:hover,
+.buttom:focus,
+.buttom:active {
+    transform: scale(1.1);
+}
+
+.no {
+    margin-left: 12.5%;
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-container2 {
+    border-radius: 6rem;
+    margin-top: 1rem;
+
+    overflow: hidden;
+}
+
+.img-love2 {
+    width: 175px;
+}
+
+/* Estilos para el mensaje*/
+.img-love {
+    width: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .login {
+        width: 50%;
+    }
+
+    .text {
+        font-size: 2rem;
+    }
+
+    .buttom {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .login {
+        width: 75%;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .buttom {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .login {
+        width: 80%;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .buttom {
+        font-size: 1rem;
+    }
+}
+</style>
+<body>
+    <body class="" style="">
+    <div class="logincontainer">
+        <div class="login">
+           
+             <h2 class="text">¿Hola Rosmery, me envias fotos tuyas diariamiente?</h2>
+             <div class="img-container2">
+                <img class="img-love2" src="https://www.kindpng.com/picc/m/630-6302694_hand-emoji-clipart-emogi-praying-emoji-hd-png.png" alt="">
+             </div>
+            
+             <div class="container-button">
+                <div class="buttom yes">
+                    <a>Si</a>
+                 </div>
+                 <div id="btnNo" class="buttom no">
+                    <p href="">No</p>
+                 </div>
+             </div>
+            
+      
+            
+        </div>
+
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/SweetAlert.js"></script>
+</body>
+</html>
